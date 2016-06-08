@@ -30,9 +30,9 @@ end
 def random_pick
     [:rock, :paper, :scissors].sample
 end
-
+100.times do
 game = Game.new
 game.player_one_choice = random_pick
 game.computer= random_pick
-
 game.play()
+end
